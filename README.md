@@ -1,6 +1,4 @@
-"# Aladdin_portfolio" 
-    
-# Hello Microverse
+# Aladdin_portfolio
 
 > This project is about Portfoilo for Me, it is to show tht The header and the main section of My portfolio.
 
