@@ -97,7 +97,8 @@ a {
 }
 
 .placeholder {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .placeholder img {
@@ -136,6 +137,10 @@ a {
   flex-grow: 2;
 }
 
+.placeholder ul {
+  width: 327px;
+}
+
 .placeholder ul li {
   box-sizing: border-box;
   border: 1px solid #8993a4;
@@ -150,16 +155,18 @@ a {
 
 .placeholder button {
   position: static;
-  width: 150px;
-  height: 34px;
-  margin: 0 10px;
+  margin: 12px 0;
+  width: 124px;
+  height: 48px;
+  padding: 12px;
   cursor: pointer;
   background-color: #ff6b00;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   border: none;
+  margin-left: 1.5rem;
 }
 
 .palce_holder {
@@ -170,6 +177,8 @@ a {
   margin-left: 1rem;
   height: 386px;
   padding-bottom: -20px;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .palce_holder h1 {
@@ -219,6 +228,7 @@ a {
   background: #ff6b00;
   width: 327px;
   height: 48px;
+  color: #fff;
   margin-top: -1rem;
 }
 
