@@ -384,9 +384,8 @@ a {
 .contact_form {
   display: flex;
   flex-direction: column;
-  background-color: #fff ;
+  background-color: #fff;
   width: 375px;
-  
 }
 
 .contact_form h2 {
@@ -400,14 +399,14 @@ a {
   padding-left: 16px;
 }
 
-.contact_form ul  {
+.contact_form ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
 }
 
-.contact_form ul li{
-  padding:  16px 12px;
+.contact_form ul li {
+  padding: 16px 12px;
   width: 327px;
   height: 18px;
 }
@@ -421,17 +420,17 @@ a {
 input {
   width: 327px;
   border: none;
-  border-bottom: 1px solid #dBd8d7;
+  border-bottom: 1px solid #dbd8d7;
 }
 
 #form_btn {
-  width: 100px;
   background-color: #ff6b00;
   margin-top: 90px;
- margin-left: 100px;
- width: 131px;
-height: 48px;
-font-size: 17px;
-line-height: 24px;
-color: #fff;
+  margin-left: 100px;
+  width: 131px;
+  height: 48px;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
 }
