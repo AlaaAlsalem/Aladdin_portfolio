@@ -380,3 +380,57 @@ a {
   width: 20px;
   height: 12px;
 }
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 375px;
+}
+
+.contact_form h2 {
+  color: #172b4d;
+  font-size: 32px;
+  line-height: 44px;
+  width: 330px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin-top: 90px;
+  padding-left: 16px;
+}
+
+.contact_form ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.contact_form ul li {
+  padding: 16px 12px;
+  width: 327px;
+  height: 18px;
+}
+
+#txtarea {
+  width: 327px;
+  background-color: #fbf8f7;
+  border: none;
+}
+
+input {
+  width: 327px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+#form_btn {
+  background-color: #ff6b00;
+  margin-top: 90px;
+  margin-left: 100px;
+  width: 131px;
+  height: 48px;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+}
