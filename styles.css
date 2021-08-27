@@ -1,4 +1,4 @@
-  
+
 .nav {
   display: flex;
   background-color: #3c3a39;
@@ -423,10 +423,13 @@ input {
   border-bottom: 1px solid #dbd8d7;
 }
 
+.l_name {
+  visibility: hidden;
+}
+
 #form_btn {
   background-color: #ff6b00;
   margin-top: 90px;
-  margin-left: 100px;
   width: 131px;
   height: 48px;
   font-size: 17px;
@@ -436,57 +439,56 @@ input {
 }
 
 @media (min-width: 1100px) {
-  
-body {
- 
-  width: auto;
-}
+  body {
+    width: auto;
+  }
 
   .nav {
     width: 100%;
   }
-   .main {
+
+  .main {
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
     align-items: baseline;
     background-position: 100%;
     background-size: auto;
-
   }
- 
-.head {
-  flex: 1;
-  width: 566px;
-  
-}
-.head h1 {
-  height: 160px;
-  width: 566px;
-  font-size: 72px;
-  margin-bottom: -40px;
-}
 
-.head h4 {
-  font-size: 32px;
-  width: 566px;
-  height: 27px;
-}
+  .head {
+    flex: 1;
+    width: 566px;
+  }
 
-.head p {
-  height: 123px;
-  font-size: 20px;
-  line-height: 32px;
-  width: 566px;
-}
+  .head h1 {
+    height: 160px;
+    width: 566px;
+    font-size: 72px;
+    margin-bottom: -40px;
+  }
+
+  .head h4 {
+    font-size: 32px;
+    width: 566px;
+    height: 27px;
+  }
+
+  .head p {
+    height: 123px;
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
+  }
 
   .icons ul {
     flex-direction: column;
   }
+
   .social-icon {
     padding-top: 20px;
   }
-  
+
   .work_wraper {
     display: flex;
     width: 1400px;
@@ -496,9 +498,8 @@ body {
   #recent {
     display: flex;
     flex-direction: row;
-      width: 100%;
+    width: 100%;
     padding: 15px;
-
   }
 
   #recent_head {
@@ -513,22 +514,20 @@ body {
   #work_line {
     float: right;
     width: 90%;
-     width: 50%;
-     border: 1px solid #212121;
-      align-self: center;
+    width: 50%;
+    border: 1px solid #212121;
+    align-self: center;
   }
 
   .placeholder {
     display: flex;
     padding-left: 90px;
     flex-direction: row;
-
   }
 
   #plac_img {
     width: 684px;
     height: 448px;
-
   }
 
   .rep-placeholder {
@@ -540,14 +539,8 @@ body {
     flex-direction: row;
   }
 
-  .palce_holder {
-    height: 435px;
-    width: 369px;
-  }
-
-
   .palce_holder1 {
-    background-image: url(./Images/Img\ Placeholder\ \(2\).png);
+    background-image: url(./Images/Img\ Placeholder2.png);
     border: 3px solid navy;
     flex-wrap: wrap;
   }
@@ -557,47 +550,58 @@ body {
   }
 
   .palce_holder4 {
-    background-image: url(./Images/Img\ Placeholder\ \(13\).png);
+    background-image: url(./Images/Img\ Placeholder13.png);
   }
 
-  .palce_holder1 h1, .palce_holder1 p, .palce_holder1 ul {
-    display: none;   
-  }
-  
-  .palce_holder3, .palce_holder6 {
-    background-image: url(./Images/Img\ Placeholder\ \(3\).png);
+  .palce_holder1 h1,
+  .palce_holder1 p,
+  .palce_holder1 ul {
+    display: none;
   }
 
-.palce_holder {
-  align-items: flex-end;
-}
+  .palce_holder3,
+  .palce_holder6 {
+    background-image: url(./Images/Img\ Placeholder3.png);
+  }
+
+  .palce_holder {
+    align-items: flex-end;
+    height: 435px;
+    width: 369px;
+  }
 
   .palce_holder p {
     width: 327px;
     height: 72px;
     line-height: 24px;
-    font-size: 14px; 
-   }
+    font-size: 14px;
+  }
 
-   .palce_holder ul {
-     width: 300px;
-     height: 150px;
-     flex-wrap: wrap;
-     align-items: flex-end;
+  .about_aln_btns li {
+    width: auto;
+    font-size: 16px;
+  }
 
+  .palce_holder ul {
+    width: 300px;
+    height: 150px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
 
-   }
+  .palce_holder ul li {
+    padding-top: -100px;
+  }
 
-   .palce_holder ul li {
-     padding-top: -100px;
-   }
-
-
-  .palce_holder3 h1 ,.palce_holder3 button, .palce_holder6 h1, .palce_holder6 button {
+  .palce_holder3 h1,
+  .palce_holder3 button,
+  .palce_holder6 h1,
+  .palce_holder6 button {
     visibility: hidden;
   }
 
-  .palce_holder3 h1::before, .palce_holder6 h1::before {
+  .palce_holder3 h1::before,
+  .palce_holder6 h1::before {
     content: 'Website Portfolio ';
     visibility: visible;
     position: inherit;
@@ -606,17 +610,22 @@ body {
     font-size: 32px;
   }
 
-   .palce_holder2, .palce_holder5 {
-    background-image: url(./Images/Img\ Placeholder\ \(4\).png);
+  .palce_holder2,
+  .palce_holder5 {
+    background-image: url(./Images/Img\ Placeholder4.png);
     background-size: 100%;
-  } 
+  }
 
-
-  .palce_holder2 h1, .palce_holder5 h1, .palce_holder2 button, .palce_holder5 button, .palce_holder4 button {
+  .palce_holder2 h1,
+  .palce_holder5 h1,
+  .palce_holder2 button,
+  .palce_holder5 button,
+  .palce_holder4 button {
     visibility: hidden;
   }
 
-  .palce_holder2 h1::before, .palce_holder5 h1::before {
+  .palce_holder2 h1::before,
+  .palce_holder5 h1::before {
     content: 'Data Dashboard Healthcare';
     visibility: visible;
     position: inherit;
@@ -625,85 +634,115 @@ body {
     font-size: 32px;
   }
 
+  .about_me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(./Images/Frame1.png);
+    background-position: 700px 99px;
+    background-size: 673.27px 353px;
+    height: 1029px;
+  }
 
- 
- .about_me {
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   background-image: url(./Images/Frame1.png);
-   background-position: 700px 99px;
-   background-size: 673.27px 353px;
-   height: 1029px;
- }
+  .about_capt {
+    margin-top: -100px;
+    margin-left: 90px;
+    width: 566px;
+    height: 582px;
+  }
 
- .about_capt {
-   margin-top: -100px;
-   margin-left: 90px;
-   width: 566px;
-   height: 582px;
- }
- .about_capt h1 {
-   width: 566px;
-   height: 78px;
-   line-height: 81.5px;
-   font-size: 72px;
-   margin-left: -118px;
- }
+  .about_capt h1 {
+    width: 566px;
+    height: 78px;
+    line-height: 81.5px;
+    font-size: 72px;
+    margin-left: -118px;
+  }
 
- .about_capt p {
-   font-weight: 400;
-   font-size: 20px;
-   line-height: 32px;
- }
+  .about_capt p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
 
- .about_capt button {
-   width: 161px;
-   height: 48px;
-   font-size: 17px;
-   letter-spacing: 3%;
- }
+  .about_capt button {
+    width: 161px;
+    height: 48px;
+    font-size: 17px;
+    letter-spacing: 3%;
+  }
 
- .line_about {
-   width: 1156px;
-   margin-top: 9px;
-   justify-content: center;
-   margin-left: 120px;
- }
+  .line_about {
+    width: 1156px;
+    margin-top: 9px;
+    justify-content: center;
+    margin-left: 120px;
+  }
 
- .about_sli {
-   display: flex;
-   flex-direction: row;
-   align-items: baseline;
-   justify-content: stretch;
-   height: 596px;
-   margin-left: 120px;
- }
+  .about_sli {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: stretch;
+    height: 596px;
+    margin-left: 120px;
+  }
 
- .about_lang {
-   width: 289.46px;
-   justify-content: center;
-   display: flex;
-   flex-direction: row;
- }
+  .about_lang {
+    width: 289.46px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
 
- .head_skl {
-   width: 228px;
-   font-size: 33px;
-   height: 44px;
- }
+  .head_skl {
+    width: 228px;
+    font-size: 33px;
+    height: 44px;
+  }
 
- .about_aln_btns {
-   align-items: baseline;
-   margin-top: -40px;
- }
+  .about_aln_btns {
+    align-items: baseline;
+    margin-top: -40px;
+  }
 
 
- .about_aln_btns li{
-   font-family: 'Inter';
-   width: auto;
-   font-size: 16px;
- }
 
+  .contact_form {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+    align-items: baseline;
+  }
+
+  .form_head {
+    width: 455px;
+    height: 256px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+    color: #262626;
+  }
+
+  .form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name,
+  .mail {
+    width: 600px;
+  }
+
+  #txtarea {
+    width: 684px;
+    height: 114px;
+  }
+
+  .form button {
+    margin-left: 30px;
+  }
 }
-
