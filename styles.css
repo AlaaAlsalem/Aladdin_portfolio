@@ -10,6 +10,10 @@
   position: absolute;
 }
 
+.d_view {
+  visibility: hidden;
+}
+
 .head h1 {
   color: #ff6b00;
   height: 64px;
@@ -443,6 +447,23 @@ input {
     width: auto;
   }
 
+  #logo {
+    margin-left: 90px;
+  }
+
+  #nav-btn {
+    visibility: hidden;
+  }
+
+  .headbtn {
+    width: fit-content;
+    margin-right: -600px;
+  }
+
+  .d_view {
+    visibility: visible;
+  }
+
   .nav {
     width: 100%;
   }
@@ -491,30 +512,28 @@ input {
 
   .work_wraper {
     display: flex;
-    width: 1400px;
+    width: 90%;
     flex-direction: column;
   }
 
   #recent {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     padding: 15px;
   }
 
   #recent_head {
     float: left;
-    width: 315px;
+    width: 30%;
     height: 52px;
-    margin-right: -100px;
-    margin-left: 20px;
     font-size: 40px;
+    margin-left: 2.5em;
   }
 
   #work_line {
     float: right;
-    width: 90%;
-    width: 50%;
+    width: 60%;
     border: 1px solid #212121;
     align-self: center;
   }
@@ -526,8 +545,18 @@ input {
   }
 
   #plac_img {
-    width: 684px;
+    width: 50%;
     height: 448px;
+  }
+
+  .txt-plac {
+    width: 40%;
+  }
+
+  .txt-plac p {
+    width: fit-content;
+    height: 140px;
+    font-size: 20px;
   }
 
   .rep-placeholder {
@@ -539,24 +568,33 @@ input {
     flex-direction: row;
   }
 
+  .palce_holder button {
+    visibility: hidden;
+  }
+
   .palce_holder1 {
+    background-image: url(./Images/Img\ Placeholder13.png);
+  }
+
+  .palce_holder1:hover {
     background-image: url(./Images/Img\ Placeholder2.png);
-    border: 3px solid navy;
-    flex-wrap: wrap;
   }
 
   .palce_holder1 button {
-    width: auto;
+    visibility: hidden;
+  }
+
+  .palce_holder1:hover .hover_hide1 {
+    display: none;
+  }
+
+  .palce_holder1:hover .visible_btn1 {
+    visibility: visible;
+    width: 100%;
   }
 
   .palce_holder4 {
     background-image: url(./Images/Img\ Placeholder13.png);
-  }
-
-  .palce_holder1 h1,
-  .palce_holder1 p,
-  .palce_holder1 ul {
-    display: none;
   }
 
   .palce_holder3,
@@ -594,9 +632,7 @@ input {
   }
 
   .palce_holder3 h1,
-  .palce_holder3 button,
-  .palce_holder6 h1,
-  .palce_holder6 button {
+  .palce_holder6 h1 {
     visibility: hidden;
   }
 
@@ -617,10 +653,7 @@ input {
   }
 
   .palce_holder2 h1,
-  .palce_holder5 h1,
-  .palce_holder2 button,
-  .palce_holder5 button,
-  .palce_holder4 button {
+  .palce_holder5 h1 {
     visibility: hidden;
   }
 
@@ -632,6 +665,55 @@ input {
     width: 327px;
     height: 81px;
     font-size: 32px;
+  }
+
+  .palce_holder2:hover .hover_hide2 {
+    display: none;
+  }
+
+  .palce_holder2:hover .visible_btn2 {
+    visibility: visible;
+    width: auto;
+  }
+
+  .palce_holder3:hover .hover_hide3 {
+    display: none;
+  }
+
+  .palce_holder3:hover .visible_btn3 {
+    visibility: visible;
+    width: auto;
+  }
+
+  .palce_holder4:hover .hover_hide4 {
+    display: none;
+  }
+
+  .palce_holder4:hover .visible_btn4 {
+    visibility: visible;
+    width: auto;
+  }
+
+  .palce_holder4:hover {
+    background-image: url(./Images/Img\ Placeholder2.png);
+  }
+
+  .palce_holder5:hover .hover_hide5 {
+    display: none;
+  }
+
+  .palce_holder5:hover .visible_btn5 {
+    visibility: visible;
+    width: auto;
+  }
+
+  .palce_holder6:hover .hover_hide6 {
+    display: none;
+  }
+
+  .palce_holder6:hover .visible_btn6 {
+    visibility: visible;
+    width: auto;
   }
 
   .about_me {
@@ -647,13 +729,11 @@ input {
   .about_capt {
     margin-top: -100px;
     margin-left: 90px;
-    width: 566px;
-    height: 582px;
+    width: 40%;
   }
 
   .about_capt h1 {
-    width: 566px;
-    height: 78px;
+    width: 100%;
     line-height: 81.5px;
     font-size: 72px;
     margin-left: -118px;
@@ -663,17 +743,17 @@ input {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+    position: static;
   }
 
   .about_capt button {
-    width: 161px;
-    height: 48px;
+    width: 30%;
     font-size: 17px;
     letter-spacing: 3%;
   }
 
   .line_about {
-    width: 1156px;
+    width: 70%;
     margin-top: 9px;
     justify-content: center;
     margin-left: 120px;
