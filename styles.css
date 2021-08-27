@@ -10,6 +10,10 @@
   position: absolute;
 }
 
+.d_view {
+  visibility: hidden;
+}
+
 .head h1 {
   color: #ff6b00;
   height: 64px;
@@ -423,14 +427,400 @@ input {
   border-bottom: 1px solid #dbd8d7;
 }
 
+.l_name {
+  visibility: hidden;
+}
+
 #form_btn {
   background-color: #ff6b00;
   margin-top: 90px;
-  margin-left: 100px;
   width: 131px;
   height: 48px;
   font-size: 17px;
   line-height: 24px;
   color: #fff;
   border: none;
+}
+
+@media (min-width: 1100px) {
+  body {
+    width: auto;
+  }
+
+  #logo {
+    margin-left: 90px;
+  }
+
+  #nav-btn {
+    visibility: hidden;
+  }
+
+  .headbtn {
+    width: fit-content;
+    margin-right: -600px;
+  }
+
+  .d_view {
+    visibility: visible;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .main {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    background-position: 100%;
+    background-size: auto;
+  }
+
+  .head {
+    flex: 1;
+    width: 566px;
+  }
+
+  .head h1 {
+    height: 160px;
+    width: 566px;
+    font-size: 72px;
+    margin-bottom: -40px;
+  }
+
+  .head h4 {
+    font-size: 32px;
+    width: 566px;
+    height: 27px;
+  }
+
+  .head p {
+    height: 123px;
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
+  }
+
+  .icons ul {
+    flex-direction: column;
+  }
+
+  .social-icon {
+    padding-top: 20px;
+  }
+
+  .work_wraper {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  #recent {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 15px;
+  }
+
+  #recent_head {
+    float: left;
+    width: 30%;
+    height: 52px;
+    font-size: 40px;
+    margin-left: 2.5em;
+  }
+
+  #work_line {
+    float: right;
+    width: 60%;
+    border: 1px solid #212121;
+    align-self: center;
+  }
+
+  .placeholder {
+    display: flex;
+    padding-left: 90px;
+    flex-direction: row;
+  }
+
+  #plac_img {
+    width: 50%;
+    height: 448px;
+  }
+
+  .txt-plac {
+    width: 40%;
+  }
+
+  .txt-plac p {
+    width: fit-content;
+    height: 140px;
+    font-size: 20px;
+  }
+
+  .rep-placeholder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    padding-right: 30px;
+    padding-left: 90px;
+    flex-direction: row;
+  }
+
+  .palce_holder button {
+    visibility: hidden;
+  }
+
+  .palce_holder1 {
+    background-image: url(./Images/Img\ Placeholder13.png);
+  }
+
+  .palce_holder1:hover {
+    background-image: url(./Images/Img\ Placeholder2.png);
+  }
+
+  .palce_holder1 button {
+    visibility: hidden;
+  }
+
+  .palce_holder1:hover .hover_hide1 {
+    display: none;
+  }
+
+  .palce_holder1:hover .visible_btn1 {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .palce_holder4 {
+    background-image: url(./Images/Img\ Placeholder13.png);
+  }
+
+  .palce_holder3,
+  .palce_holder6 {
+    background-image: url(./Images/Img\ Placeholder3.png);
+  }
+
+  .palce_holder {
+    align-items: flex-end;
+    height: 435px;
+    width: 369px;
+  }
+
+  .palce_holder p {
+    width: 327px;
+    height: 72px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  .about_aln_btns li {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .palce_holder ul {
+    width: 300px;
+    height: 150px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .palce_holder ul li {
+    padding-top: -100px;
+  }
+
+  .palce_holder3 h1,
+  .palce_holder6 h1 {
+    visibility: hidden;
+  }
+
+  .palce_holder3 h1::before,
+  .palce_holder6 h1::before {
+    content: 'Website Portfolio ';
+    visibility: visible;
+    position: inherit;
+    width: 327px;
+    height: 38px;
+    font-size: 32px;
+  }
+
+  .palce_holder2,
+  .palce_holder5 {
+    background-image: url(./Images/Img\ Placeholder4.png);
+    background-size: 100%;
+  }
+
+  .palce_holder2 h1,
+  .palce_holder5 h1 {
+    visibility: hidden;
+  }
+
+  .palce_holder2 h1::before,
+  .palce_holder5 h1::before {
+    content: 'Data Dashboard Healthcare';
+    visibility: visible;
+    position: inherit;
+    width: 327px;
+    height: 81px;
+    font-size: 32px;
+  }
+
+  .palce_holder2:hover .hover_hide2 {
+    display: none;
+  }
+
+  .palce_holder2:hover .visible_btn2 {
+    visibility: visible;
+    width: auto;
+  }
+
+  .palce_holder3:hover .hover_hide3 {
+    display: none;
+  }
+
+  .palce_holder3:hover .visible_btn3 {
+    visibility: visible;
+    width: auto;
+  }
+
+  .palce_holder4:hover .hover_hide4 {
+    display: none;
+  }
+
+  .palce_holder4:hover .visible_btn4 {
+    visibility: visible;
+    width: auto;
+  }
+
+  .palce_holder4:hover {
+    background-image: url(./Images/Img\ Placeholder2.png);
+  }
+
+  .palce_holder5:hover .hover_hide5 {
+    display: none;
+  }
+
+  .palce_holder5:hover .visible_btn5 {
+    visibility: visible;
+    width: auto;
+  }
+
+  .palce_holder6:hover .hover_hide6 {
+    display: none;
+  }
+
+  .palce_holder6:hover .visible_btn6 {
+    visibility: visible;
+    width: auto;
+  }
+
+  .about_me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(./Images/Frame1.png);
+    background-position: 700px 99px;
+    background-size: 673.27px 353px;
+    height: 1029px;
+  }
+
+  .about_capt {
+    margin-top: -100px;
+    margin-left: 90px;
+    width: 40%;
+  }
+
+  .about_capt h1 {
+    width: 100%;
+    line-height: 81.5px;
+    font-size: 72px;
+    margin-left: -118px;
+  }
+
+  .about_capt p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    position: static;
+  }
+
+  .about_capt button {
+    width: 30%;
+    font-size: 17px;
+    letter-spacing: 3%;
+  }
+
+  .line_about {
+    width: 70%;
+    margin-top: 9px;
+    justify-content: center;
+    margin-left: 120px;
+  }
+
+  .about_sli {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: stretch;
+    height: 596px;
+    margin-left: 120px;
+  }
+
+  .about_lang {
+    width: 289.46px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .head_skl {
+    width: 228px;
+    font-size: 33px;
+    height: 44px;
+  }
+
+  .about_aln_btns {
+    align-items: baseline;
+    margin-top: -40px;
+  }
+
+  .contact_form {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+    align-items: baseline;
+  }
+
+  .form_head {
+    width: 455px;
+    height: 256px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+    color: #262626;
+  }
+
+  .form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name,
+  .mail {
+    width: 600px;
+  }
+
+  #txtarea {
+    width: 684px;
+    height: 114px;
+  }
+
+  .form button {
+    margin-left: 30px;
+  }
 }
