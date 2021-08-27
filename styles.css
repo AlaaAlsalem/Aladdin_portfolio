@@ -437,6 +437,11 @@ input {
 
 @media (min-width: 1100px) {
   
+body {
+ 
+  width: auto;
+}
+
   .nav {
     width: 100%;
   }
@@ -515,6 +520,7 @@ input {
 
   .placeholder {
     display: flex;
+    padding-left: 90px;
     flex-direction: row;
 
   }
@@ -524,6 +530,180 @@ input {
     height: 448px;
 
   }
+
+  .rep-placeholder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    padding-right: 30px;
+    padding-left: 90px;
+    flex-direction: row;
+  }
+
+  .palce_holder {
+    height: 435px;
+    width: 369px;
+  }
+
+
+  .palce_holder1 {
+    background-image: url(./Images/Img\ Placeholder\ \(2\).png);
+    border: 3px solid navy;
+    flex-wrap: wrap;
+  }
+
+  .palce_holder1 button {
+    width: auto;
+  }
+
+  .palce_holder4 {
+    background-image: url(./Images/Img\ Placeholder\ \(13\).png);
+  }
+
+  .palce_holder1 h1, .palce_holder1 p, .palce_holder1 ul {
+    display: none;   
+  }
+  
+  .palce_holder3, .palce_holder6 {
+    background-image: url(./Images/Img\ Placeholder\ \(3\).png);
+  }
+
+.palce_holder {
+  align-items: flex-end;
+}
+
+  .palce_holder p {
+    width: 327px;
+    height: 72px;
+    line-height: 24px;
+    font-size: 14px; 
+   }
+
+   .palce_holder ul {
+     width: 300px;
+     height: 150px;
+     flex-wrap: wrap;
+     align-items: flex-end;
+
+
+   }
+
+   .palce_holder ul li {
+     padding-top: -100px;
+   }
+
+
+  .palce_holder3 h1 ,.palce_holder3 button, .palce_holder6 h1, .palce_holder6 button {
+    visibility: hidden;
+  }
+
+  .palce_holder3 h1::before, .palce_holder6 h1::before {
+    content: 'Website Portfolio ';
+    visibility: visible;
+    position: inherit;
+    width: 327px;
+    height: 38px;
+    font-size: 32px;
+  }
+
+   .palce_holder2, .palce_holder5 {
+    background-image: url(./Images/Img\ Placeholder\ \(4\).png);
+    background-size: 100%;
+  } 
+
+
+  .palce_holder2 h1, .palce_holder5 h1, .palce_holder2 button, .palce_holder5 button, .palce_holder4 button {
+    visibility: hidden;
+  }
+
+  .palce_holder2 h1::before, .palce_holder5 h1::before {
+    content: 'Data Dashboard Healthcare';
+    visibility: visible;
+    position: inherit;
+    width: 327px;
+    height: 81px;
+    font-size: 32px;
+  }
+
+
+ 
+ .about_me {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-image: url(./Images/Frame1.png);
+   background-position: 700px 99px;
+   background-size: 673.27px 353px;
+   height: 1029px;
+ }
+
+ .about_capt {
+   margin-top: -100px;
+   margin-left: 90px;
+   width: 566px;
+   height: 582px;
+ }
+ .about_capt h1 {
+   width: 566px;
+   height: 78px;
+   line-height: 81.5px;
+   font-size: 72px;
+   margin-left: -118px;
+ }
+
+ .about_capt p {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 32px;
+ }
+
+ .about_capt button {
+   width: 161px;
+   height: 48px;
+   font-size: 17px;
+   letter-spacing: 3%;
+ }
+
+ .line_about {
+   width: 1156px;
+   margin-top: 9px;
+   justify-content: center;
+   margin-left: 120px;
+ }
+
+ .about_sli {
+   display: flex;
+   flex-direction: row;
+   align-items: baseline;
+   justify-content: stretch;
+   height: 596px;
+   margin-left: 120px;
+ }
+
+ .about_lang {
+   width: 289.46px;
+   justify-content: center;
+   display: flex;
+   flex-direction: row;
+ }
+
+ .head_skl {
+   width: 228px;
+   font-size: 33px;
+   height: 44px;
+ }
+
+ .about_aln_btns {
+   align-items: baseline;
+   margin-top: -40px;
+ }
+
+
+ .about_aln_btns li{
+   font-family: 'Inter';
+   width: auto;
+   font-size: 16px;
+ }
 
 }
 
