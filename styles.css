@@ -825,29 +825,33 @@ input {
   }
 
   .d_view:hover {
-      animation-duration: 3s;
-      animation-name: slidein;
-    }
-    
-    @keyframes slidein {
-      from {
-        margin-left: 100%;
-        width: 300%;
-      }
-    
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
+    animation-duration: 3s;
+    animation-name: slidein;
   }
 
-  #plac_im:hover {
+  @keyframes slidein {
+    from {
+      margin-left: 10%;
+      width: 30%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  #plac_img:hover {
     animation: mymove 5s infinite;
   }
-  
+
   @keyframes mymove {
-    30% {transform: rotate(180deg);}
-  }
-  
+    10% { transform: rotate(180deg); }
   }
 
+  button:hover,
+  button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+  }
+}
