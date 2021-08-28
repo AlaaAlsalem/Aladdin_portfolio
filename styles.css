@@ -839,6 +839,15 @@ input {
         margin-left: 0%;
         width: 100%;
       }
-    }
+  }
+
+  #plac_im:hover {
+    animation: mymove 5s infinite;
+  }
   
-}
+  @keyframes mymove {
+    30% {transform: rotate(180deg);}
+  }
+  
+  }
+
