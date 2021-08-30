@@ -1,5 +1,4 @@
 # Aladdin_portfolio
-
 > This project is about Portfoilo for Me, it is to show tht The header and the main section of My portfolio.
 
 
@@ -40,3 +39,6 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+## you can see the live project  from the below link
+[https://alaaalsalem.github.io/Aladdin_portfolio/index.html]
