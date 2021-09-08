@@ -1,4 +1,7 @@
 
+body {
+  margin: auto;
+}
 .nav {
   display: flex;
   background-color: #3c3a39;
@@ -11,7 +14,7 @@
 }
 
 .menu-hidden {
-  display: none;
+  visibility: hidden;
 }
 
 #mob_link {
@@ -21,10 +24,6 @@
   top: 0;
   bottom: 0;
   z-index: 99;
-
-  /* flex-direction: column;
-  align-items: center;
-   background-color: rgba(0, 0, 0, 0.836); */
 }
 
 .closeMenu {
@@ -507,7 +506,7 @@ input {
 
 
 #modal {
-  display: none;
+  visibility: hidden;;
   position: fixed;
   backdrop-filter: blur(8px);
   right: 0;
@@ -629,7 +628,7 @@ input {
 
 
 #modal {
-  display: none;
+  visibility: hidden;;
   position: fixed;
 }
 
@@ -841,7 +840,7 @@ input {
   }
 
   .palce_holder1:hover .hover_hide1 {
-    display: none;
+    visibility: hidden;;
   }
 
   .palce_holder1:hover .visible_btn1 {
@@ -924,7 +923,7 @@ input {
   }
 
   .palce_holder2:hover .hover_hide2 {
-    display: none;
+    visibility: hidden;;
   }
 
   .palce_holder2:hover .visible_btn2 {
@@ -933,7 +932,7 @@ input {
   }
 
   .palce_holder3:hover .hover_hide3 {
-    display: none;
+    visibility: hidden;;
   }
 
   .palce_holder3:hover .visible_btn3 {
@@ -942,7 +941,7 @@ input {
   }
 
   .palce_holder4:hover .hover_hide4 {
-    display: none;
+    visibility: hidden;;
   }
 
   .palce_holder4:hover .visible_btn4 {
@@ -955,7 +954,7 @@ input {
   }
 
   .palce_holder5:hover .hover_hide5 {
-    display: none;
+    visibility: hidden;;
   }
 
   .palce_holder5:hover .visible_btn5 {
@@ -964,7 +963,7 @@ input {
   }
 
   .palce_holder6:hover .hover_hide6 {
-    display: none;
+    visibility: hidden;;
   }
 
   .palce_holder6:hover .visible_btn6 {

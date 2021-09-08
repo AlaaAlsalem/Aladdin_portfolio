@@ -212,3 +212,13 @@ closeProjectButton.addEventListener('click', () => {
 
 /*end working on pop up window*/
 
+
+
+
+/*starting work on pop up window*/
+
+
+const details = [
+  {
+    name: 'Multi School Stories',
+    desc
