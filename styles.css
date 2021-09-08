@@ -10,6 +10,66 @@
   position: absolute;
 }
 
+.mobile-menu-hidden {
+  visibility: hidden;
+}
+
+.main #mob_link {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+
+  /* flex-direction: column;
+  align-items: center;
+   background-color: rgba(0, 0, 0, 0.836); */
+}
+
+.closeMenu {
+  padding-left: 70%;
+  font-size: 2rem;
+  display: block;
+  cursor: pointer;
+  color: #67798e;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  background-color: #3c3a39;
+  visibility: visible;
+}
+
+#close-button {
+  margin-left: auto;
+  display: inline-block;
+}
+
+.menu-links {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+.nav-menu-link {
+  list-style: none;
+  color: #fff;
+}
+
+#nav-btn {
+  border: none;
+  background-color: #3c3a39;
+  color: #fff;
+}
+
 .d_view {
   visibility: hidden;
 }
@@ -716,6 +776,7 @@ input {
     width: auto;
   }
 
+  /* hjahjahsja */
   .about_me {
     display: flex;
     flex-direction: column;
@@ -824,23 +885,6 @@ input {
     margin-left: 30px;
   }
 
-  .d_view:hover {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 10%;
-      width: 30%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
   #plac_img:hover {
     animation: mymove 5s infinite;
   }
@@ -851,7 +895,7 @@ input {
 
   button:hover,
   button:focus {
-    box-shadow: 0 0.5em 0.6em -0.4em var(--hover);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
   }
 }

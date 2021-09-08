@@ -14,8 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Aladdin</title>
-</head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5BPHF76GD5"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -24,24 +23,31 @@
 
   gtag('config', 'G-5BPHF76GD5');
 </script>
+</head>
+
 <body>
     <header>
         <nav class="nav">
             <ul>
                 <li id="logo"><a href="#">Aladdin Alsalem</a></li>
                
-                <li class=" headbtn d_view"><a href="#">Portfolio</a></li>
-                <li class=" headbtn d_view"> <a href="#">About</a></li>
-                <li class="headbtn d_view"> <a href="#">contact</a></li>
-                <li class="headbtn d_view"><i class="fa fa-envelope" aria-hidden="true"></i></li>
-                 
+                <li class=" headbtn mob_hdn d_view"><a href="#">Portfolio</a></li>
+                <li class=" headbtn mob_hdn d_view"> <a href="#">About</a></li>
+                <li class="headbtn mob_hdn d_view"> <a href="#">contact</a></li>
+                <li class="headbtn mob_hdn d_view"><i class="fa fa-envelope" aria-hidden="true"></i></li>
                 <li id="nav-btn"><nav class="fas fa-bars hamburger-icon menu"></nav></li>
             </ul>
+           
         </nav>
+       
     </header>
 
     <main>
         <section class="main">
+            <div id="mob_link">
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+
+            </div>
             <div class="head">
                 <h1>Hey There.<br>I'm Aladdin</h1>
                 <h4>I am a Software Developer</h4>
@@ -60,7 +66,7 @@
             </div>
         </section>
 
-        <section class="work_wraper">
+        <section id="actual-work-section" class="work_wraper">
             <div id="recent">
                 <h1 id="recent_head">My Recent work</h1>
             
@@ -165,7 +171,7 @@
             </div>
             </div>
         </section>
-        <section class="about_me">
+        <section id="menu-about" class="about_me">
             <div class="about_capt">
                 <h1>About Me</h1>
                 <p>Hello, Iam a software developer. I can help<br>you build a product, feature or website.<br>Look through some of my work and<br>experience! If
@@ -238,7 +244,7 @@
         </section>
 
         </section>
-        <section class="contact_form">
+        <section id="menu-contact" class="contact_form">
             <h2 class="form_head">I am always intrested in hearing about new projects,    so  if you would like to chat,   please get in touch  </h2>
 
             <form action="https://formspree.io/f/xvodvyek" method= "POST" class="form">
@@ -264,5 +270,6 @@
         </section>
 
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
