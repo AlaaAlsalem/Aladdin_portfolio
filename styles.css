@@ -1,12 +1,19 @@
-
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
 .nav {
   display: flex;
   background-color: #3c3a39;
   flex-direction: column;
-  height: 70px;
-  width: 375px;
+  height: auto;
+  width: 100%;
   color: #fff;
-  justify-content: center;
+  justify-content: space-between;
   position: absolute;
 }
 
@@ -27,15 +34,16 @@
    background-color: rgba(0, 0, 0, 0.836); */
 }
 
-/* .closeMenu {
+ .closeMenu {
   padding-left: 70%;
   font-size: 2rem;
   display: block;
   cursor: pointer;
   color: #67798e;
-} */
+  overflow-x: hidden;
+} 
 
-.show {
+.visible {
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
@@ -48,7 +56,7 @@
   display: inline-block;
 }
 
-.links {
+.menu-links {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
   font-style: normal;
