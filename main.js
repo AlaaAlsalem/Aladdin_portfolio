@@ -1,4 +1,4 @@
-/*const mobileMenuDiv = document.querySelector('#mob_link');
+/* const mobileMenuDiv = document.querySelector('#mob_link');
 mobileMenuDiv.className = 'menu-hidden';
 let anchorTag = document.createElement('a');
 anchorTag.setAttribute('href', '/');
@@ -47,7 +47,7 @@ closeButton.addEventListener('click', closePop);
 const anchorTagLinks = document.querySelectorAll('.links');
 anchorTagLinks.forEach((link) => {
   link.addEventListener('click', closePop);
-});*/
+}); */
 
 const mobileMenuDiv = document.querySelector('#mob_link');
 mobileMenuDiv.className = 'menu-hidden';

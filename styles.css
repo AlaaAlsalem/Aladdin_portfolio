@@ -27,14 +27,14 @@
    background-color: rgba(0, 0, 0, 0.836); */
 }
 
- .closeMenu {
+.closeMenu {
   padding-left: 70%;
   font-size: 2rem;
   display: block;
   cursor: pointer;
   color: #67798e;
   overflow-x: hidden;
-} 
+}
 
 .visible {
   display: flex;
