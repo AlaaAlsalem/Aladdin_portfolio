@@ -10,11 +10,11 @@
   position: absolute;
 }
 
-.mobile-menu-hidden {
-  visibility: hidden;
+.menu-hidden {
+  display: none;
 }
 
-.main #mob_link {
+#mob_link {
   position: fixed;
   left: 0;
   right: 0;
@@ -27,13 +27,13 @@
    background-color: rgba(0, 0, 0, 0.836); */
 }
 
-.closeMenu {
+/* .closeMenu {
   padding-left: 70%;
   font-size: 2rem;
   display: block;
   cursor: pointer;
   color: #67798e;
-}
+} */
 
 .show {
   display: flex;
@@ -48,7 +48,7 @@
   display: inline-block;
 }
 
-.menu-links {
+.links {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
   font-style: normal;
@@ -71,7 +71,7 @@
 }
 
 .d_view {
-  visibility: hidden;
+  display: none;
 }
 
 .head h1 {
