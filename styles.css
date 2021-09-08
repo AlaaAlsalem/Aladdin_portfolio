@@ -1,18 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  width: 100%;
-  height: 100vh;
-}
+
 .nav {
   display: flex;
   background-color: #3c3a39;
   flex-direction: column;
   height: auto;
-  width: 100%;
   color: #fff;
+  width: 365px;
   justify-content: space-between;
   position: absolute;
 }
