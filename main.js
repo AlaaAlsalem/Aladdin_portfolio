@@ -1,53 +1,4 @@
-/* const mobileMenuDiv = document.querySelector('#mob_link');
-mobileMenuDiv.className = 'menu-hidden';
-let anchorTag = document.createElement('a');
-anchorTag.setAttribute('href', '/');
-anchorTag.style.display = 'flex';
-anchorTag.style.justifyContent = 'flex-end';
-anchorTag.style.marginBottom = '10%';
-anchorTag.style.marginRight = '10%';
-const closingIcon = document.createElement('IMG');
-closingIcon.setAttribute('src', 'Images/Icon.png');
-closingIcon.setAttribute('alt', 'icon image');
-closingIcon.id = 'close-button';
-anchorTag.appendChild(closingIcon);
-mobileMenuDiv.appendChild(anchorTag);
-anchorTag = document.createElement('a');
-anchorTag.textContent = 'Portfolio';
-anchorTag.setAttribute('href', '#actual-work-section');
-anchorTag.className = 'links';
-mobileMenuDiv.appendChild(anchorTag);
-anchorTag = document.createElement('a');
-anchorTag.textContent = 'About';
-anchorTag.setAttribute('href', '#menu-about');
-anchorTag.className = 'links';
-mobileMenuDiv.appendChild(anchorTag);
-anchorTag = document.createElement('a');
-anchorTag.textContent = 'Contact';
-anchorTag.setAttribute('href', '#menu-contact');
-anchorTag.className = 'links';
-mobileMenuDiv.appendChild(anchorTag);
-const menuButton = document.querySelector('#nav_btn');
 
-function display() {
-  const targetedDiv = document.querySelector('.menu-hidden');
-  targetedDiv.classList.add('show');
-  menuButton.style.display = 'none';
-}
-
-menuButton.addEventListener('click', display);
-const closeButton = document.querySelector('#close-button');
-function closePop() {
-  const targetedDiv2 = document.querySelector('.menu-hidden');
-  targetedDiv2.classList.remove('show');
-  menuButton.style.display = 'block';
-}
-
-closeButton.addEventListener('click', closePop);
-const anchorTagLinks = document.querySelectorAll('.links');
-anchorTagLinks.forEach((link) => {
-  link.addEventListener('click', closePop);
-}); */
 
 const mobileMenuDiv = document.querySelector('#mob_link');
 mobileMenuDiv.className = 'menu-hidden';
@@ -112,54 +63,69 @@ const details = [
   {
     name: 'Multi School Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry and typesetting industry. Lorem Ipsum has been the industry and typesetting industry. Lorem Ipsum has been the industry and typesetting industry. Lorem Ipsum has been the industry',
-    image: 'img/a.jpg',
+    image: 'Images/Frame1.pg',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
-    live: 'https://whoistolu.github.io/personal-portfolio/',
-    source: 'https://github.com/Whoistolu/personal-portfolio',
+    live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
+    source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
   {
     name: 'Multi School Stories',
     description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia',
     image: 'img/e.jpg',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
-    live: 'https://whoistolu.github.io/personal-portfolio/',
-    source: 'https://github.com/Whoistolu/personal-portfolio',
+    live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
+    source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
   {
     name: 'Multi School Stories',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry and typesetting industry. Lorem Ipsum has been the industry and typesetting industry. Lorem Ipsum has been the industry and typesetting industry. Lorem Ipsum has been the industry',
     image: 'img/b.jpg',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
-    live: 'https://whoistolu.github.io/personal-portfolio/',
-    source: 'https://github.com/Whoistolu/personal-portfolio',
+    live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
+    source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
   {
     name: 'Multi School Stories',
     description: 'To popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia fnfifdfdifhfio fjnkfvkfvfkjfdf jkfndfkdfklgfjkdfnkkjkl jkdfsk',
     image: 'img/a.jpg',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
-    live: 'https://whoistolu.github.io/personal-portfolio/',
-    source: 'https://github.com/Whoistolu/personal-portfolio',
+    live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
+    source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
   {
     name: 'Multi School Stories',
     description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a kjbdfkjfvjfvjfvjjo jnffnjvjnvm jgxcgmnklbnfkf ofgngd;fnfkfsip kpgsngfnfjokjf fspkl',
     image: 'img/c.jpg',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
-    live: 'https://whoistolu.github.io/personal-portfolio/',
-    source: 'https://github.com/Whoistolu/personal-portfolio',
+    live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
+    source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
   {
     name: 'Multi School Stories',
     description: 'khfjfjfusjfj nvnvsdjdv jdnbvsd jdsjdsklddnd ksvbfkfjf jdnjkfjf kdjdkdfjjk lnbnfklfnffn jbdndbdnkdddjdd dblkjsjksklss dfhfjfhfsfsh jfndfjdnffnnfnfklslsljkfjff jfnfjfjnfnfn fnfjfjfjvmfbvv   v vnnvnnvnvnvnvnv vnvnvjdnknxj jfdp[fpffnfmfkfj nvfjfjffjfjjfjff jgjkgjkgjkgkj',
     image: 'img/f.jpg',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
-    live: 'https://whoistolu.github.io/personal-portfolio/',
-    source: 'https://github.com/Whoistolu/personal-portfolio',
+    live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
+    source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
 ];
 
-const SeeProjectButton = document.querySelectorAll('.project-button2');
+/*
+const SeeProjectButton = document.querySelector('#hetest');
+SeeCardButton.addEventListener('click',function(){
+  const windowPop = document.querySelector('#modal');
+  windowPop.style.visibility = 'visible';
+  const projectDetail = details[i];
+  const heading = document.querySelector('.heading h2');
+  heading.textContent = projectDetail.name;
+  const paragraph = document.querySelector('.img-p-button .description');
+  paragraph.textContent = projectDetail.description;
+  const picture = document.querySelector('.img-p-button .image');
+  picture.src = projectDetail.image;
+  const languages = document.querySelectorAll('.languages .bttn');
+  languages.forEach((li, s) => {
+    li.textContent = projectDetail.technologies[s];
+});/*
 SeeProjectButton.forEach((item, i) => {
   item.addEventListener('click', () => {
     const windowPop = document.querySelector('#modal');
@@ -180,12 +146,12 @@ SeeProjectButton.forEach((item, i) => {
     const source = windowPop.querySelectorAll('.first-button')[1];
     source.href = projectDetail.source;
   });
-});
+});*/
 const SeeCardButton = document.querySelectorAll('.click-card');
 SeeCardButton.forEach((item, i) => {
   item.addEventListener('click', () => {
     const windowPop = document.querySelector('#modal');
-    windowPop.style.display = 'block';
+    windowPop.style.visibility ='visible';
     const projectDetail = details[i];
     const heading = document.querySelector('.heading h2');
     heading.textContent = projectDetail.name;
@@ -210,15 +176,5 @@ closeProjectButton.addEventListener('click', () => {
 });
 
 
-/*end working on pop up window*/
 
-
-
-
-/*starting work on pop up window*/
-
-
-const details = [
-  {
-    name: 'Multi School Stories',
-    desc
+/* end workinf onpop up */

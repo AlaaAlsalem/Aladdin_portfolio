@@ -505,7 +505,8 @@ input {
 /*start of styling the modol*/
 
 
-#modal {
+
+/*#modal {
   visibility: hidden;;
   position: fixed;
   backdrop-filter: blur(8px);
@@ -517,6 +518,7 @@ input {
 }
 
 #modal .content {
+  visibility: hidden;
   border: 1px solid #ff6b00;
   background-color: white;
   margin-top: 40px;
@@ -538,6 +540,7 @@ input {
 
 #modal .close {
   padding: 14px;
+  
 }
 
 #modal .heading h2 {
@@ -617,7 +620,8 @@ input {
 .double-button {
   display: flex;
   justify-content: flex-start;
-}
+}*/
+
 /*end of styling the modol*/
 
 
@@ -627,11 +631,10 @@ input {
 /*start modol*/
 
 
-#modal {
-  visibility: hidden;;
-  position: fixed;
-}
 
+#modal {
+  visibility: visible;
+}/*
 #modal .content {
   background-color: #fff;
   height: calc(100vh - 150px);
@@ -643,7 +646,6 @@ input {
   height: 448px;
   object-fit: cover;
 }
-
 #modal .image {
   width: 100%;
   flex-shrink: 1;
@@ -694,7 +696,42 @@ input {
   word-break: break-all;
 }
 
-/*end modol*/
+.first-button {
+  background-color: #ff6b00;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  max-width: 12em;
+}
+
+.first-button:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.first-button:enabled {
+  background-color: #f55800;
+  color: #fff;
+}
+
+.first-button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.double-button {
+  display: flex;
+  justify-content: flex-start;
+}*/
+
+
+}/*end modol*/
 
 
 
