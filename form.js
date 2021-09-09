@@ -1,6 +1,6 @@
-const emailAddress = document.getElementById('myEmail');
-const templateForm = document.getElementById('form_id');
-const validatorMessage = document.getElementById('validator-message');
+/*const emailAddress = document.querySelector('#myEmail');
+const templateForm = document.querySelector('#form_id');
+const validatorMessage = document.getElementById('validator-message');*/
 templateForm.addEventListener('submit', (e) => {
   if (emailAddress.value !== emailAddress.value.toLowerCase()) {
     e.preventDefault();
