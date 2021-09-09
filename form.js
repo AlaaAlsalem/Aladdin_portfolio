@@ -1,11 +1,11 @@
-/*const emailAddress = document.querySelector('#myEmail');
+const emailAddress = document.querySelector('#myEmail');
 const templateForm = document.querySelector('#form_id');
-const validatorMessage = document.getElementById('validator-message');*/
+const messageValidator = document.getElementById('message-validator');
 templateForm.addEventListener('submit', (e) => {
   if (emailAddress.value !== emailAddress.value.toLowerCase()) {
     e.preventDefault();
-    validatorMessage.textContent = 'Kindly input a valid email address!';
+    messageValidator.textContent = 'Kindly input a valid email address on lower case format!';
   } else {
-    validatorMessage.textContent = '';
+    messageValidator.textContent = '';
   }
 });
