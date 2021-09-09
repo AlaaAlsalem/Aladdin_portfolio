@@ -1,4 +1,3 @@
-
 const mobileMenuDiv = document.querySelector('#mob_link');
 mobileMenuDiv.className = 'menu-hidden';
 let anchorTag = document.createElement('a');
@@ -52,5 +51,3 @@ anchorTagLinks.forEach((link) => {
   link.addEventListener('click', closePop);
 });
 closeMenu.addEventListener('click', closePop);
-
-
