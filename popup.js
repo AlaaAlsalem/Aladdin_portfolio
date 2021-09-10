@@ -101,5 +101,10 @@ SeeCardButton.forEach((item, i) => {
     source.href = projectDetail.source;
   });
 });
+const closeProjectButton = document.querySelector('.close');
+closeProjectButton.addEventListener('click', () => {
+  const windowPop = document.querySelector('#modal');
+  windowPop.style.visibility = 'hidden';
+});
 
   
