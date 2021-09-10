@@ -14,25 +14,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Aladdin</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5BPHF76GD5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5BPHF76GD5');
+</script>
 </head>
+
 <body>
     <header>
         <nav class="nav">
             <ul>
                 <li id="logo"><a href="#">Aladdin Alsalem</a></li>
                
-                <li class=" headbtn d_view"><a href="#">Portfolio</a></li>
-                <li class=" headbtn d_view"> <a href="#">About</a></li>
-                <li class="headbtn d_view"> <a href="#">contact</a></li>
-                <li class="headbtn d_view"><i class="fa fa-envelope" aria-hidden="true"></i></li>
-                 
+                <li class=" headbtn mob_hdn d_view"><a href="#">Portfolio</a></li>
+                <li class=" headbtn mob_hdn d_view"> <a href="#">About</a></li>
+                <li class="headbtn mob_hdn d_view"> <a href="#">contact</a></li>
+                <li class="headbtn mob_hdn d_view"><i class="fa fa-envelope" aria-hidden="true"></i></li>
                 <li id="nav-btn"><nav class="fas fa-bars hamburger-icon menu"></nav></li>
             </ul>
+           
         </nav>
+       
     </header>
 
     <main>
         <section class="main">
+            <div id="mob_link">
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+
+            </div>
             <div class="head">
                 <h1>Hey There.<br>I'm Aladdin</h1>
                 <h4>I am a Software Developer</h4>
@@ -51,7 +66,7 @@
             </div>
         </section>
 
-        <section class="work_wraper">
+        <section id="actual-work-section" class="work_wraper">
             <div id="recent">
                 <h1 id="recent_head">My Recent work</h1>
             
@@ -70,7 +85,7 @@
                         <li id="lboot_btn">bootstrap</li>
                         <li id="lruby_btn">Ruby</li>
                     </ul>
-                    <button class="see_pro_btn">See project</button>
+                    <button id="hetest" class="see_pro_btn  project-button2">See project</button>
                 </div>
 
 
@@ -87,7 +102,7 @@
                     <li>bootstrap</li>
                     <li>Ruby</li>
                 </ul>
-                <button class="visible_btn1" >See project</button>
+                <button class="visible_btn1 project-button2"  >See project</button>
             </div>
             <div class="palce_holder palce_holder2   ">
                 <h1 class="hover_hide2">Professional Art<br>Printing Data</h1>
@@ -100,7 +115,7 @@
                     <li>bootstrap</li>
                     <li>Ruby</li>
                 </ul>
-                <button  class="visible_btn2">See project</button>
+                <button  class="visible_btn2 project-button2">See project</button>
             </div> 
             <div class="palce_holder palce_holder3">
                 <h1 class="hover_hide3">Professional Art<br>Printing Data</h1>
@@ -156,7 +171,7 @@
             </div>
             </div>
         </section>
-        <section class="about_me">
+        <section id="menu-about" class="about_me">
             <div class="about_capt">
                 <h1>About Me</h1>
                 <p>Hello, Iam a software developer. I can help<br>you build a product, feature or website.<br>Look through some of my work and<br>experience! If
@@ -229,10 +244,12 @@
         </section>
 
         </section>
-        <section class="contact_form">
-            <h2 class="form_head">I am always intrested in hearing about new projects,    so  if you would like to chat,   please get in touch  </h2>
+        
+        <section id="menu-contact" class="contact_form">
+            <h2 class="form_head">I am always intrested in hearing about new projects,
+                    so  if you would like to chat,   please get in touch  </h2>
 
-            <form action="https://formspree.io/f/xvodvyek" method= "POST" class="form">
+            <form action="https://formspree.io/f/xvodvyek" method= "POST" class="form" id="form_id">
                
                 <ul>
                     <li>
@@ -240,20 +257,25 @@
 
                     </li>
                     <li>
-                        <input type="email" id="E-mail" class="mail" placeholder="Email address" required name="Email">
+                        <input type="email" id="myEmail" class="mail" placeholder="Email address" required name="Email">
                     </li>
                     <li>
                         <textarea class="txt_area"  maxlength="500" rows="6" id="txtarea" cols="10" placeholder="Enter text here" required name="message"></textarea>
                     </li>
                     
                 </ul>
-                
                  <button type="submit" id="form_btn" >Get in touch</button>
-
+               <span id="message-validator"></span>
 
             </form>
+            
+            
+
         </section>
 
     </main>
+    <script src="main.js"></script>
+    <script src="form.js"></script>
+
 </body>
 </html>

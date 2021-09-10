@@ -1,13 +1,74 @@
 
+body {
+  margin: auto;
+}
+
 .nav {
   display: flex;
   background-color: #3c3a39;
   flex-direction: column;
-  height: 70px;
-  width: 375px;
+  height: auto;
   color: #fff;
-  justify-content: center;
+  width: 365px;
+  justify-content: space-between;
   position: absolute;
+}
+
+.menu-hidden {
+  visibility: hidden;
+}
+
+#mob_link {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.closeMenu {
+  padding-left: 70%;
+  font-size: 2rem;
+  display: block;
+  cursor: pointer;
+  color: #67798e;
+  overflow-x: hidden;
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  background-color: #3c3a39;
+  visibility: visible;
+}
+
+#close-button {
+  margin-left: auto;
+  display: inline-block;
+}
+
+.menu-links {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+.nav-menu-link {
+  list-style: none;
+  color: #fff;
+}
+
+#nav-btn {
+  border: none;
+  background-color: #3c3a39;
+  color: #fff;
 }
 
 .d_view {
@@ -442,6 +503,15 @@ input {
   border: none;
 }
 
+#validator-message {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: rgb(168, 151, 151);
+  align-items: center;
+  animation: blink 1s ease-in-out 2s;
+}
+
 @media (min-width: 1100px) {
   body {
     width: auto;
@@ -585,7 +655,7 @@ input {
   }
 
   .palce_holder1:hover .hover_hide1 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder1:hover .visible_btn1 {
@@ -668,7 +738,7 @@ input {
   }
 
   .palce_holder2:hover .hover_hide2 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder2:hover .visible_btn2 {
@@ -677,7 +747,7 @@ input {
   }
 
   .palce_holder3:hover .hover_hide3 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder3:hover .visible_btn3 {
@@ -686,7 +756,7 @@ input {
   }
 
   .palce_holder4:hover .hover_hide4 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder4:hover .visible_btn4 {
@@ -699,7 +769,7 @@ input {
   }
 
   .palce_holder5:hover .hover_hide5 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder5:hover .visible_btn5 {
@@ -708,7 +778,7 @@ input {
   }
 
   .palce_holder6:hover .hover_hide6 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder6:hover .visible_btn6 {
@@ -805,14 +875,19 @@ input {
   }
 
   .form {
+    width: auto;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
   }
 
+  .form ul {
+    width: auto;
+  }
+
   .name,
   .mail {
-    width: 600px;
+    width: 500px;
   }
 
   #txtarea {
@@ -822,23 +897,6 @@ input {
 
   .form button {
     margin-left: 30px;
-  }
-
-  .d_view:hover {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 10%;
-      width: 30%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
   }
 
   #plac_img:hover {
@@ -851,7 +909,7 @@ input {
 
   button:hover,
   button:focus {
-    box-shadow: 0 0.5em 0.6em -0.4em var(--hover);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
   }
 }
