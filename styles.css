@@ -235,7 +235,6 @@ a {
 
 .palce_holder {
   display: grid;
-  row-gap: 40px;
   background-image: url(./Images/backgoundtool.png);
   background-repeat: no-repeat;
   margin-left: 1rem;
@@ -364,6 +363,7 @@ a {
   font-weight: bold;
   font-size: 27px;
   color: #fff;
+  
 }
 
 .about_aln_btns {
@@ -502,6 +502,141 @@ input {
   border: none;
 }
 
+/*it is for test the mob view*/
+
+
+#modal {
+  visibility: hidden;
+  position: fixed;
+  backdrop-filter: blur(8px);
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 200;
+}
+
+#modal .content {
+  border: 1px solid #dee1e6;
+  background-color: #ffffff;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.languages {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0;
+  margin-bottom: 1em;
+  width: 100%;
+  padding: 0 20PX 0 20px;
+  list-style-type: none;
+}
+
+#modal .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 95%;
+}
+
+#modal .close {
+  padding: 14px;
+}
+
+#modal .heading h2 {
+  color: #172b4d;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+#modal .image {
+  width: 90%;
+  object-fit: cover;
+  height: 50%;
+}
+
+#modal .description {
+  color: #344563;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  flex-shrink: 1;
+}
+
+.img-p-button {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-height: 0;
+ /* flex-basis: 100%;*/
+}
+
+.p-button {
+  min-height: 0;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: auto;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.first-button {
+  background-color: #ff6b00;
+  padding: 14px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-button:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.first-button:enabled {
+  background-color: #f55800;
+  color: #fff;
+}
+
+.first-button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.double-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 /*start of styling the modol*/
 
 
@@ -623,28 +758,66 @@ input {
 }*/
 
 /*end of styling the modol*/
+#modal .bttn {
+  box-sizing: border-box;
+  border: 1px solid #979493;
+  color: #3c3a39;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
 
 
-
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
 
 /*start modol*/
 
+#modal .bttn {
+  box-sizing: border-box;
+  border: 1px solid #979493;
+  color: #3c3a39;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 13px;
+  padding: 0.6rem;
+}
+.languages {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 20;
+  margin-bottom: 1;
+  margin-top: -1rem;
+  width: 95%;
 
+}
 
 #modal {
-  visibility: visible;
-}/*
+ visibility: hidden;
+  position: fixed;
+  backdrop-filter: blur(8px);
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #ebecf0;;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+ /* transform: translate(-5%, -5%) scale(0);*/
+  z-index: 200;
+}
 #modal .content {
   background-color: #fff;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 160px);
+  height: auto;
   margin: 80px 142px;
 }
 
 .img-p-button .image {
-  width: 100%;
-  height: 448px;
+  width: 50%;
+  height: auto;
   object-fit: cover;
+  padding-left: 20px;
 }
 #modal .image {
   width: 100%;
@@ -653,17 +826,31 @@ input {
   min-width: 400px;
   height: unset;
   object-fit: cover;
+margin-bottom: 20px;
 }
 
 #modal .heading {
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  color: #172B4D;
+  font-size: 32px ;
+  line-height: 44px;
+  margin: 0px 12px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 95%;
+
+
 }
 
 .img-p-button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+
+
 }
 
 .p-button {
@@ -686,14 +873,12 @@ input {
 }
 
 #modal .description {
-  margin: 0;
-  color: #344583;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  word-break: break-all;
+color: #344563;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+ font-weight: 400;
+font-size: 16px;
+line-height: 30px;
 }
 
 .first-button {
@@ -705,7 +890,9 @@ input {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  max-width: 12em;
+  max-width: 15em;
+    margin-right: 0.3em;
+    margin-bottom: 20px;
 }
 
 .first-button:hover {
@@ -728,10 +915,26 @@ input {
 .double-button {
   display: flex;
   justify-content: flex-start;
-}*/
+
+}
+
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  height: auto;
+  color: #3c3a39;
+  font-weight: 600;
+  line-height: 16px;
+  border: 1px solid black;
+  border: 1px solid #979493;
+box-sizing: border-box;
+
+}
 
 
-}/*end modol*/
+
+/*end modol*/
 
 
 
@@ -877,7 +1080,7 @@ input {
   }
 
   .palce_holder1:hover .hover_hide1 {
-    visibility: hidden;;
+    visibility: hidden;
   }
 
   .palce_holder1:hover .visible_btn1 {
@@ -960,17 +1163,17 @@ input {
   }
 
   .palce_holder2:hover .hover_hide2 {
-    visibility: hidden;;
-  }
+display: none;  
+}
 
   .palce_holder2:hover .visible_btn2 {
-    visibility: visible;
+    display: block;
     width: auto;
   }
 
   .palce_holder3:hover .hover_hide3 {
-    visibility: hidden;;
-  }
+    display: none;
+   }
 
   .palce_holder3:hover .visible_btn3 {
     visibility: visible;
@@ -978,8 +1181,7 @@ input {
   }
 
   .palce_holder4:hover .hover_hide4 {
-    visibility: hidden;;
-  }
+display: none;  }
 
   .palce_holder4:hover .visible_btn4 {
     visibility: visible;
@@ -991,8 +1193,7 @@ input {
   }
 
   .palce_holder5:hover .hover_hide5 {
-    visibility: hidden;;
-  }
+display: none;  }
 
   .palce_holder5:hover .visible_btn5 {
     visibility: visible;
@@ -1000,8 +1201,7 @@ input {
   }
 
   .palce_holder6:hover .hover_hide6 {
-    visibility: hidden;;
-  }
+display: none;  }
 
   .palce_holder6:hover .visible_btn6 {
     visibility: visible;
