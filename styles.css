@@ -2,6 +2,7 @@
 body {
   margin: auto;
 }
+
 .nav {
   display: flex;
   background-color: #3c3a39;
@@ -363,7 +364,6 @@ a {
   font-weight: bold;
   font-size: 27px;
   color: #fff;
-  
 }
 
 .about_aln_btns {
@@ -502,9 +502,6 @@ input {
   border: none;
 }
 
-/*it is for test the mob view*/
-
-
 #modal {
   visibility: hidden;
   position: fixed;
@@ -518,7 +515,7 @@ input {
 
 #modal .content {
   border: 1px solid #dee1e6;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-top: 3rem;
   margin-bottom: 3rem;
   margin-left: 1rem;
@@ -535,10 +532,9 @@ input {
   flex-flow: row wrap;
   justify-content: flex-start;
   gap: 10px;
-  padding: 0;
   margin-bottom: 1em;
   width: 100%;
-  padding: 0 20PX 0 20px;
+  padding: 0 20px 0 20px;
   list-style-type: none;
 }
 
@@ -546,7 +542,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 95%;
+  width: 100%;
 }
 
 #modal .close {
@@ -582,7 +578,6 @@ input {
   flex-direction: column;
   flex-shrink: 1;
   min-height: 0;
- /* flex-basis: 100%;*/
 }
 
 .p-button {
@@ -637,10 +632,6 @@ input {
   gap: 20px;
 }
 
-/*start of styling the modol*/
-
-
-/*end of styling the modol*/
 #modal .bttn {
   box-sizing: border-box;
   border: 1px solid #979493;
@@ -648,178 +639,162 @@ input {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
 }
-
 
 @media (min-width: 1000px) {
+  #modal .bttn {
+    box-sizing: border-box;
+    border: 1px solid #979493;
+    color: #3c3a39;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 0.6rem;
+  }
 
-/*start modol*/
+  .languages {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    width: 100%;
+  }
 
-#modal .bttn {
-  box-sizing: border-box;
-  border: 1px solid #979493;
-  color: #3c3a39;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  line-height: 20px;
-  font-size: 13px;
-  padding: 0.6rem;
-}
-.languages {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  gap: 10px;
-  padding-left: 20;
-  margin-bottom: 1;
-  margin-top: -1rem;
-  width: 95%;
+  #modal {
+    visibility: hidden;
+    position: fixed;
+    backdrop-filter: blur(8px);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    z-index: 200;
+  }
 
-}
+  #modal .content {
+    background-color: #fff;
+    height: calc(100vh - 160px);
+    height: auto;
+    margin: 80px 142px;
+  }
 
-#modal {
- visibility: hidden;
-  position: fixed;
-  backdrop-filter: blur(8px);
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  border: 1px solid #ebecf0;;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
- /* transform: translate(-5%, -5%) scale(0);*/
-  z-index: 200;
-}
-#modal .content {
-  background-color: #fff;
-  height: calc(100vh - 160px);
-  height: auto;
-  margin: 80px 142px;
-}
+  .img-p-button .image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 20px;
+  }
 
-.img-p-button .image {
-  width: 50%;
-  height: auto;
-  object-fit: cover;
-  padding-left: 20px;
-}
-#modal .image {
-  width: 100%;
-  flex-shrink: 1;
-  flex-grow: 1;
-  min-width: 400px;
-  height: unset;
-  object-fit: cover;
-margin-bottom: 20px;
-}
+  #modal .image {
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: 400px;
+    height: unset;
+    object-fit: cover;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
 
-#modal .heading {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-  color: #172B4D;
-  font-size: 32px ;
-  line-height: 44px;
-  margin: 0px 12px;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  width: 95%;
+  #modal .heading {
+    display: flex;
+    justify-content: space-between;
+    color: #172b4d;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 0 12px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 95%;
+  }
 
+  .img-p-button {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-}
+  .p-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+    max-width: 500px;
+  }
 
-.img-p-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  #modal .heading h2 {
+    color: #172b4d;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 44px;
+  }
 
+  #modal .description {
+    color: #344563;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+  }
 
-}
-
-.p-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 2rem;
-  flex-shrink: 1;
-  flex-grow: 1;
-  max-width: 500px;
-}
-
-#modal .heading h2 {
-  color: #172b4d;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 44px;
-}
-
-#modal .description {
-color: #344563;
-font-family: 'Inter', sans-serif;
-font-style: normal;
- font-weight: 400;
-font-size: 16px;
-line-height: 30px;
-}
-
-.first-button {
-  background-color: #ff6b00;
-  text-decoration: none;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  color: #fff;
-  max-width: 15em;
+  .first-button {
+    background-color: #ff6b00;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    max-width: 15em;
     margin-right: 0.3em;
     margin-bottom: 20px;
-}
+  }
 
-.first-button:hover {
-  background-color: #fff5e1;
-  color: #ff6b00;
-  border: 1px solid #f55800;
-  box-sizing: border-box;
-}
+  .first-button:hover {
+    background-color: #fff5e1;
+    color: #ff6b00;
+    border: 1px solid #f55800;
+    box-sizing: border-box;
+  }
 
-.first-button:enabled {
-  background-color: #f55800;
-  color: #fff;
-}
+  .first-button:enabled {
+    background-color: #f55800;
+    color: #fff;
+  }
 
-.first-button:disabled {
-  background-color: #f4f1f0;
-  color: #5b5957;
-}
+  .first-button:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
 
-.double-button {
-  display: flex;
-  justify-content: flex-start;
+  .double-button {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2rem;
+  }
 
-}
-
-.btn {
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;
-  font-style: normal;
-  height: auto;
-  color: #3c3a39;
-  font-weight: 600;
-  line-height: 16px;
-  border: 1px solid black;
-  border: 1px solid #979493;
-box-sizing: border-box;
-
-}
-
-
-
-/*end modol*/
-
-
+  .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    height: auto;
+    color: #3c3a39;
+    font-weight: 600;
+    line-height: 16px;
+    border: 1px solid black;
+    border: 1px solid #979493;
+    box-sizing: border-box;
+  }
 
   body {
     width: auto;
@@ -1046,8 +1021,8 @@ box-sizing: border-box;
   }
 
   .palce_holder2:hover .hover_hide2 {
-display: none;  
-}
+    display: none;
+  }
 
   .palce_holder2:hover .visible_btn2 {
     display: block;
@@ -1056,7 +1031,7 @@ display: none;
 
   .palce_holder3:hover .hover_hide3 {
     display: none;
-   }
+  }
 
   .palce_holder3:hover .visible_btn3 {
     visibility: visible;
@@ -1064,7 +1039,8 @@ display: none;
   }
 
   .palce_holder4:hover .hover_hide4 {
-display: none;  }
+    display: none;
+  }
 
   .palce_holder4:hover .visible_btn4 {
     visibility: visible;
@@ -1076,7 +1052,8 @@ display: none;  }
   }
 
   .palce_holder5:hover .hover_hide5 {
-display: none;  }
+    display: none;
+  }
 
   .palce_holder5:hover .visible_btn5 {
     visibility: visible;
@@ -1084,14 +1061,14 @@ display: none;  }
   }
 
   .palce_holder6:hover .hover_hide6 {
-display: none;  }
+    display: none;
+  }
 
   .palce_holder6:hover .visible_btn6 {
     visibility: visible;
     width: auto;
   }
 
-  /* hjahjahsja */
   .about_me {
     display: flex;
     flex-direction: column;
