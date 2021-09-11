@@ -236,7 +236,6 @@ a {
 
 .palce_holder {
   display: grid;
-  row-gap: 40px;
   background-image: url(./Images/backgoundtool.png);
   background-repeat: no-repeat;
   margin-left: 1rem;
@@ -504,7 +503,7 @@ input {
 }
 
 #modal {
-  display: none;
+  visibility: hidden;
   position: fixed;
   backdrop-filter: blur(8px);
   right: 0;
@@ -515,23 +514,35 @@ input {
 }
 
 #modal .content {
-  border: 1px solid #ff6b00;
-  background-color: white;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 26px;
-  margin-right: 26px;
+  border: 1px solid #dee1e6;
+  background-color: #fff;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
-  height: calc(100vh - 80px);
+}
+
+.languages {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 1em;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  list-style-type: none;
 }
 
 #modal .heading {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%;
 }
 
 #modal .close {
@@ -548,9 +559,9 @@ input {
 }
 
 #modal .image {
-  width: 100%;
+  width: 90%;
   object-fit: cover;
-  min-height: 100px;
+  height: 50%;
 }
 
 #modal .description {
@@ -559,11 +570,7 @@ input {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
-  margin-top: 24px;
   flex-shrink: 1;
-  min-height: 0;
-  overflow: auto;
 }
 
 .img-p-button {
@@ -571,7 +578,6 @@ input {
   flex-direction: column;
   flex-shrink: 1;
   min-height: 0;
-  flex-basis: 100%;
 }
 
 .p-button {
@@ -581,10 +587,14 @@ input {
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  height: auto;
+  box-sizing: border-box;
+  width: 90%;
 }
 
 .first-button {
   background-color: #ff6b00;
+  padding: 14px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -592,13 +602,15 @@ input {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  max-width: 12em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .first-button:hover {
   background-color: #fff5e1;
   color: #ff6b00;
-  border: 1px solid #f55800;
   box-sizing: border-box;
 }
 
@@ -613,26 +625,67 @@ input {
 }
 
 .double-button {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-@media (min-width: 1100px) {
+#modal .bttn {
+  box-sizing: border-box;
+  border: 1px solid #979493;
+  color: #3c3a39;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+@media (min-width: 1000px) {
+  #modal .bttn {
+    box-sizing: border-box;
+    border: 1px solid #979493;
+    color: #3c3a39;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 0.6rem;
+  }
+
+  .languages {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    width: 100%;
+  }
+
   #modal {
-    display: none;
+    visibility: hidden;
     position: fixed;
+    backdrop-filter: blur(8px);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    z-index: 200;
   }
 
   #modal .content {
     background-color: #fff;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 160px);
+    height: auto;
     margin: 80px 142px;
   }
 
   .img-p-button .image {
-    width: 100%;
-    height: 448px;
+    width: 50%;
+    height: auto;
     object-fit: cover;
+    padding-left: 20px;
   }
 
   #modal .image {
@@ -642,17 +695,26 @@ input {
     min-width: 400px;
     height: unset;
     object-fit: cover;
+    margin-bottom: 20px;
+    padding-left: 0;
   }
 
   #modal .heading {
     display: flex;
     justify-content: space-between;
+    color: #172b4d;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 0 12px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 95%;
   }
 
   .img-p-button {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .p-button {
@@ -675,14 +737,62 @@ input {
   }
 
   #modal .description {
-    margin: 0;
-    color: #344583;
+    color: #344563;
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
+    line-height: 30px;
+  }
+
+  .first-button {
+    background-color: #ff6b00;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
     line-height: 24px;
-    word-break: break-all;
+    color: #fff;
+    max-width: 15em;
+    margin-right: 0.3em;
+    margin-bottom: 20px;
+  }
+
+  .first-button:hover {
+    background-color: #fff5e1;
+    color: #ff6b00;
+    border: 1px solid #f55800;
+    box-sizing: border-box;
+  }
+
+  .first-button:enabled {
+    background-color: #f55800;
+    color: #fff;
+  }
+
+  .first-button:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
+
+  .double-button {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2rem;
+  }
+
+  .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    height: auto;
+    color: #3c3a39;
+    font-weight: 600;
+    line-height: 16px;
+    border: 1px solid black;
+    border: 1px solid #979493;
+    box-sizing: border-box;
   }
 
   body {
@@ -910,15 +1020,16 @@ input {
   }
 
   .palce_holder2:hover .hover_hide2 {
-    visibility: hidden;
+    display: none;
   }
 
   .palce_holder2:hover .visible_btn2 {
-    visibility: visible;
+    display: block;
     width: auto;
   }
 
   .palce_holder3:hover .hover_hide3 {
+    display: none;
     visibility: hidden;
   }
 
@@ -928,7 +1039,7 @@ input {
   }
 
   .palce_holder4:hover .hover_hide4 {
-    visibility: hidden;
+    display: none;
   }
 
   .palce_holder4:hover .visible_btn4 {
@@ -941,6 +1052,7 @@ input {
   }
 
   .palce_holder5:hover .hover_hide5 {
+    display: none;
     visibility: hidden;
   }
 
@@ -950,7 +1062,7 @@ input {
   }
 
   .palce_holder6:hover .hover_hide6 {
-    visibility: hidden;
+    display: none;
   }
 
   .palce_holder6:hover .visible_btn6 {
