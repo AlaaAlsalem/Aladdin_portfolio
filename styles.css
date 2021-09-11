@@ -536,7 +536,6 @@ input {
   width: 100%;
   padding: 0 20px 0 20px;
   list-style-type: none;
-
 }
 
 #modal .heading {
@@ -572,7 +571,6 @@ input {
   font-weight: normal;
   font-size: 16px;
   flex-shrink: 1;
-
 }
 
 .img-p-button {

@@ -9,12 +9,12 @@ const details = [
     live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
     source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
-  
+
   {
     name: 'Professional Art printing Date',
-    description: 'A daily selection of privately personalized reads; no accounts sign-upsrequired. Has been theindustry\'s standard' ,
+    description: 'A daily selection of privately personalized reads; no accounts sign-upsrequired. Has been theindustry\'s standard',
     image: './Images/ten.png',
-    technologies: ['html', 'bootsrap','Ruby'],
+    technologies: ['html', 'bootsrap', 'Ruby'],
     live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
     source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
@@ -36,7 +36,7 @@ const details = [
   },
   {
     name: 'Professional Art printing Date',
-    description: 'A daily selection of privately personalized reads; no accounts sign-upsrequired. Has been theindustry\'s standard' ,
+    description: 'A daily selection of privately personalized reads; no accounts sign-upsrequired. Has been theindustry\'s standard',
     image: './Images/ten.png',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
     live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
@@ -58,7 +58,7 @@ const details = [
     live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
     source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
-  
+
 ];
 
 //
