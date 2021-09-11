@@ -3,52 +3,62 @@
 const details = [
   {
     name: 'Multi Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'A daily selection of privately personalized<br>reads; no accounts or sign-upsrequired has been the industry\'s standard dummy text ever since the 1500s, when anunknown printer took a standard dummy text.',
     image: './Images/ten.png',
     technologies: ['CSS', 'html', 'bootsrap', 'Ruby'],
     live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
     source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
+  
   {
-    name: 'Multi Post Stories',
-    description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia',
+    name: 'Professional Art printing Date',
+    description: 'A daily selection of privately personalized reads; no accounts sign-upsrequired. Has been theindustry\'s standard' ,
+    image: './Images/ten.png',
+    technologies: ['html', 'bootsrap','Ruby'],
+    live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
+    source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    description: 'A daily selection of privately personalized<br>reads; no accounts or sign-upsrequired has been the industry\'s standard dummy text ever since the 1500s, when anunknown printer took a standard dummy text.',
     image: './Images/ten.png',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
     live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
     source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
   {
-    name: 'Multi Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry and typesetting industry. Lorem Ipsum has been the industry and typesetting industry. Lorem Ipsum has been the industry and typesetting industry. Lorem Ipsum has been the industry',
+    name: 'Website Portfolio ',
+    description: 'A daily selection of privately personalized<br>reads; no accounts or sign-upsrequired has been the industry\'s standard dummy text ever since the 1500s, when anunknown printer took a standard dummy text.',
     image: './Images/ten.png',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
     live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
     source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
   {
-    name: 'Multi Post Stories',
-    description: 'To popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia fnfifdfdifhfio fjnkfvkfvfkjfdf jkfndfkdfklgfjkdfnkkjkl jkdfsk',
+    name: 'Professional Art printing Date',
+    description: 'A daily selection of privately personalized reads; no accounts sign-upsrequired. Has been theindustry\'s standard' ,
     image: './Images/ten.png',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
     live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
     source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
   {
-    name: 'Multi Post Stories',
-    description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a kjbdfkjfvjfvjfvjjo jnffnjvjnvm jgxcgmnklbnfkf ofgngd;fnfkfsip kpgsngfnfjokjf fspkl',
+    name: 'Data Dashboard Healthcare',
+    description: 'A daily selection of privately personalized<br>reads; no accounts or sign-upsrequired has been the industry\'s standard dummy text ever since the 1500s, when anunknown printer took a standard dummy text.',
     image: './Images/ten.png',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
     live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
     source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
   {
-    name: 'Multi Post Stories',
-    description: 'Hello from Web development this text is only for testing and to see how   it will be op the screen when render it',
+    name: 'Website Portfolio ',
+    description: 'A daily selection of privately personalized<br>reads; no accounts or sign-upsrequired has been the industry\'s standard dummy text ever since the 1500s, when anunknown printer took a standard dummy text.',
     image: './Images/ten.png',
     technologies: ['ruby', 'css', 'javascript', 'bootsrap'],
     live: 'https://alaaalsalem.github.io/Aladdin_portfolio/',
     source: 'https://github.com/AlaaAlsalem/Aladdin_portfolio',
   },
+  
 ];
 
 //
