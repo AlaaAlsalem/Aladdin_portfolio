@@ -503,7 +503,6 @@ input {
   border: none;
 }
 
-
 #modal {
   display: none;
   position: fixed;
@@ -616,7 +615,6 @@ input {
 .double-button {
   display: flex;
   justify-content: flex-start;
-
 }
 
 @media (min-width: 1100px) {
