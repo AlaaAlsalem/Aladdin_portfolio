@@ -536,6 +536,7 @@ input {
   width: 100%;
   padding: 0 20px 0 20px;
   list-style-type: none;
+
 }
 
 #modal .heading {
@@ -571,6 +572,7 @@ input {
   font-weight: normal;
   font-size: 16px;
   flex-shrink: 1;
+
 }
 
 .img-p-button {
@@ -611,7 +613,6 @@ input {
 .first-button:hover {
   background-color: #fff5e1;
   color: #ff6b00;
-  border: 1px solid transparent;
   box-sizing: border-box;
 }
 

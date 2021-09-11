@@ -31,21 +31,21 @@ anchorTag.className = 'menu-links';
 mobileMenuDiv.appendChild(anchorTag);
 const menuButton = document.querySelector('#nav-btn');
 
-function display() {
+const display = () => {
   const targetedDiv = document.querySelector('.menu-hidden');
   targetedDiv.classList.add('visible');
   mobileMenuDiv.style.visibility = 'visible';
   menuButton.style.display = 'none';
-}
+};
 
 const closeMenu = document.querySelector('.closeMenu');
 menuButton.addEventListener('click', display);
-function closePop() {
+const closePop = () => {
   const targetedDiv2 = document.querySelector('.menu-hidden');
   targetedDiv2.style.display = 'none';
   menuButton.style.display = 'block';
   closeMenu.style.display = 'none';
-}
+};
 const anchorTagLinks = document.querySelectorAll('.menu-links');
 anchorTagLinks.forEach((link) => {
   link.addEventListener('click', closePop);
