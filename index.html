@@ -85,7 +85,7 @@
                         <li id="lboot_btn">bootstrap</li>
                         <li id="lruby_btn">Ruby</li>
                     </ul>
-                    <button class="see_pro_btn">See project</button>
+                    <button id="hetest" class="see_pro_btn  project-button2">See project</button>
                 </div>
 
 
@@ -102,7 +102,7 @@
                     <li>bootstrap</li>
                     <li>Ruby</li>
                 </ul>
-                <button class="visible_btn1" >See project</button>
+                <button class="visible_btn1 project-button2"  >See project</button>
             </div>
             <div class="palce_holder palce_holder2   ">
                 <h1 class="hover_hide2">Professional Art<br>Printing Data</h1>
@@ -115,7 +115,7 @@
                     <li>bootstrap</li>
                     <li>Ruby</li>
                 </ul>
-                <button  class="visible_btn2">See project</button>
+                <button  class="visible_btn2 project-button2">See project</button>
             </div> 
             <div class="palce_holder palce_holder3">
                 <h1 class="hover_hide3">Professional Art<br>Printing Data</h1>
@@ -244,10 +244,12 @@
         </section>
 
         </section>
+        
         <section id="menu-contact" class="contact_form">
-            <h2 class="form_head">I am always intrested in hearing about new projects,    so  if you would like to chat,   please get in touch  </h2>
+            <h2 class="form_head">I am always intrested in hearing about new projects,
+                    so  if you would like to chat,   please get in touch  </h2>
 
-            <form action="https://formspree.io/f/xvodvyek" method= "POST" class="form">
+            <form action="https://formspree.io/f/xvodvyek" method= "POST" class="form" id="form_id">
                
                 <ul>
                     <li>
@@ -255,21 +257,25 @@
 
                     </li>
                     <li>
-                        <input type="email" id="E-mail" class="mail" placeholder="Email address" required name="Email">
+                        <input type="email" id="myEmail" class="mail" placeholder="Email address" required name="Email">
                     </li>
                     <li>
                         <textarea class="txt_area"  maxlength="500" rows="6" id="txtarea" cols="10" placeholder="Enter text here" required name="message"></textarea>
                     </li>
                     
                 </ul>
-                
                  <button type="submit" id="form_btn" >Get in touch</button>
-
+               <span id="message-validator"></span>
 
             </form>
+            
+            
+
         </section>
 
     </main>
     <script src="main.js"></script>
+    <script src="form.js"></script>
+
 </body>
 </html>

@@ -503,6 +503,7 @@ input {
   border: none;
 }
 
+
 #modal {
   display: none;
   position: fixed;
@@ -615,6 +616,7 @@ input {
 .double-button {
   display: flex;
   justify-content: flex-start;
+
 }
 
 @media (min-width: 1100px) {
@@ -827,7 +829,7 @@ input {
   }
 
   .palce_holder1:hover .hover_hide1 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder1:hover .visible_btn1 {
@@ -910,7 +912,7 @@ input {
   }
 
   .palce_holder2:hover .hover_hide2 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder2:hover .visible_btn2 {
@@ -919,7 +921,7 @@ input {
   }
 
   .palce_holder3:hover .hover_hide3 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder3:hover .visible_btn3 {
@@ -928,7 +930,7 @@ input {
   }
 
   .palce_holder4:hover .hover_hide4 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder4:hover .visible_btn4 {
@@ -941,7 +943,7 @@ input {
   }
 
   .palce_holder5:hover .hover_hide5 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder5:hover .visible_btn5 {
@@ -950,7 +952,7 @@ input {
   }
 
   .palce_holder6:hover .hover_hide6 {
-    display: none;
+    visibility: hidden;
   }
 
   .palce_holder6:hover .visible_btn6 {
@@ -1047,14 +1049,19 @@ input {
   }
 
   .form {
+    width: auto;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
   }
 
+  .form ul {
+    width: auto;
+  }
+
   .name,
   .mail {
-    width: 600px;
+    width: 500px;
   }
 
   #txtarea {
