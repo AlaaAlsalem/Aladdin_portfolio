@@ -502,7 +502,6 @@ input {
   border: none;
 }
 
-
 #modal {
   visibility: hidden;
   position: fixed;
@@ -797,8 +796,6 @@ input {
     box-sizing: border-box;
   }
 
-@media (min-width: 1100px) {
-
   body {
     width: auto;
   }
@@ -1024,9 +1021,7 @@ input {
   }
 
   .palce_holder2:hover .hover_hide2 {
-
     display: none;
-
   }
 
   .palce_holder2:hover .visible_btn2 {
@@ -1035,11 +1030,8 @@ input {
   }
 
   .palce_holder3:hover .hover_hide3 {
-
     display: none;
-
     visibility: hidden;
-
   }
 
   .palce_holder3:hover .visible_btn3 {
@@ -1048,9 +1040,7 @@ input {
   }
 
   .palce_holder4:hover .hover_hide4 {
-
     display: none;
-
   }
 
   .palce_holder4:hover .visible_btn4 {
@@ -1063,11 +1053,8 @@ input {
   }
 
   .palce_holder5:hover .hover_hide5 {
-
     display: none;
-
     visibility: hidden;
-
   }
 
   .palce_holder5:hover .visible_btn5 {
@@ -1076,9 +1063,7 @@ input {
   }
 
   .palce_holder6:hover .hover_hide6 {
-
-    display: none
-
+    display: none;
   }
 
   .palce_holder6:hover .visible_btn6 {
